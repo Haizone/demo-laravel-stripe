@@ -24,7 +24,7 @@ Generate a random app key :
 
 `php artisan key:generate`
 
-Set the stripe keys with your own in the *.env* file (keys can be found at https://dashboard.stripe.com/account/apikeys) :
+Set the stripe keys with your own in the *.env* file (see [https://dashboard.stripe.com/account/apikeys](https://dashboard.stripe.com/account/apikeys)) :
 
     STRIPE_KEY=pk_test_xxxxx
     STRIPE_SECRET=sk_test_xxxxx
@@ -33,4 +33,4 @@ Serve the public folder, or use artisan's serve command for simplicity :
 
 `php artisan serve`
 
-Go to (http://localhost:8000/pay)[http://localhost:8000/pay]. Voilà !
+Go to [http://localhost:8000/pay](http://localhost:8000/pay). Voilà !
