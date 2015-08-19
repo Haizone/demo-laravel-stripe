@@ -1,27 +1,36 @@
-## Laravel PHP Framework
+## Laravel Stripe demo
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is a demo project of using Stripe with Laravel for a one shot payment. See [http://craftyx.fr/blog/2015/08/19/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe](http://craftyx.fr/blog/2015/08/21/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe) (fr)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### Installation
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Clone the repository :
 
-## Official Documentation
+`git clone git@github.com:JulienTant/demo-laravel-stripe.git`
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Go to to folder :
 
-## Contributing
+`cd demo-laravel-stripe/`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Install dependencies :
 
-## Security Vulnerabilities
+`composer install`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Copy the demo env file :
 
-### License
+`cp .env.example .env`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Generate a random app key :
+
+`php artisan key:generate`
+
+Set the stripe keys with your own in the *.env* file (keys can be found at https://dashboard.stripe.com/account/apikeys) :
+
+    STRIPE_KEY=pk_test_xxxxx
+    STRIPE_SECRET=sk_test_xxxxx
+
+Serve the public folder, or use artisan's serve command for simplicity :
+
+`php artisan serve`
+
+Go to (http://localhost:8000/pay)[http://localhost:8000/pay]. Voilà !
