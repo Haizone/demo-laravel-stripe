@@ -1,6 +1,6 @@
 ## Laravel Stripe demo
 
-This is a demo project of using Stripe with Laravel for a one shot payment. See [http://craftyx.fr/blog/2015/08/19/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe](http://craftyx.fr/blog/2015/08/21/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe) (fr)
+This is a demo project of using Stripe with Laravel for a one shot payment. See [http://craftyx.fr/blog/2015/08/19/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe](http://craftyx.fr/blog/2015/08/19/accepter-des-paiement-sur-votre-sites-en-moins-de-5-minutes-avec-laravel-et-stripe) (fr)
 
 ### Installation
 
